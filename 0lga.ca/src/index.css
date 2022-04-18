@@ -58,6 +58,7 @@ h1 {
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
 section > h2, section > h5 {
@@ -113,7 +114,6 @@ img {
 
 
 /* ---------------- Media Queries (Med Devices) ---------------- */
-
 @media screen and (max-width: 1024) {
   .container {
     width: var(--container-width-md);
@@ -125,7 +125,6 @@ img {
 }
 
 /* ---------------- Media Queries (Small Devices) ---------------- */
-
 @media screen and (max-width: 600) {
   .container {
     width: var(--container-width-sm);
