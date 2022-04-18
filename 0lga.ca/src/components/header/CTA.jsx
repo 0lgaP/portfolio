@@ -1,5 +1,7 @@
 import React from 'react';
 import Resume from '../../assets/PerronOlgaResume.pdf'
+import './header.css';
+
 
 const CTA = () => {
   return (
