@@ -9,6 +9,10 @@ header {
   height: 100%;
   position: relative;
 }
+.header__down-arrow {
+  position: relative;
+  top: 3px;
+}
 
 /* CTA */
 .cta {

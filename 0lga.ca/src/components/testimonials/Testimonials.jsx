@@ -4,7 +4,17 @@ import Avatar from '../../assets/blue.png'
 import Rose from '../../assets/Rosemarry.jpeg'
 import Adam from '../../assets/Adam.jpeg'
 import Jae from '../../assets/Jaeyoung.jpeg'
+import {BsFillArrowRightSquareFill, BsFillArrowLeftSquareFill} from 'react-icons/bs'
 
+import { Navigation, Pagination} from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 const data = [
   {
     id: 1,
@@ -54,12 +64,8 @@ const data = [
     name: 'Jeremy Forsyth',
     img: Avatar,
     review: `I had the privilege of working with Olga during my 1.5 years managing Educational Programs at Design Exchange, and feel truly lucky to have been her teammate.
-
     Olga was invaluable in pulling together the museum's education offerings. She maintained a great rapport with our instructors and museum staff during an extremely challenging summer camp season, while also overseeing our home-school, field trip and community outreach programs. No matter how busy things got, Olga remained organized and always ensured that the necessary materials were ordered and ready for the young designers to create. 
-    
-    Perhaps most impressively, Olga was able to manage all of these projects while simultaneously providing exceptional customer service at the museum's front desk. She was always ready to give impromptu tours for curious visitors, and her passion for art and design rubbed off on everyone who passed through our space.
-    
-    An anecdote that reveals Olga's work ethic is when she took the lead on organizing and overseeing our museum's participation in Doors Open, which included guided tours and silk screen workshops. Olga cut all the stencils (beautifully, by hand!), organized the instructors, prepped the tour script AND oversaw the whole operation over the weekend. The event was a massive success, and it's all thanks to Olga! I give her my highest recommendation and would love to work with her again.`
+    Perhaps most impressively, Olga was able to manage all of these projects while simultaneously providing exceptional customer service at the museum's front desk. She was always ready to give impromptu tours for curious visitors, and her passion for art and design rubbed off on everyone who passed through our space.`
   }
 ]
 
@@ -69,23 +75,37 @@ const Testimonials = () => {
       <h5>Endorsemnts from collegues</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials__container">
+<>
+      <Swiper className="container testimonials__container swiper-wrapper"
+      modules={[Navigation, Pagination]}
+      spaceBetween={50}
+      slidesPerView={1}
+      loop={true}
+      pagination={{ clickable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+      >
 
         {
           data.map(({id, name, img, review}) => {
             return (
-        <article key={id} class="testimonial">
+              <SwiperSlide key={id} class="swiper-slide">
+          <article className='testimonial'>
+
+          <h3 className='testemonials__directions'><BsFillArrowLeftSquareFill className='testemonials__arrow'/> &nbsp;Swipe to view more &nbsp;<BsFillArrowRightSquareFill className='testemonials__arrow'/></h3>
+
           <div className="client__avatar">
             <img src={img} alt={name}/>
           </div>
-          <h5 className='client__name'>{name}</h5>
+          <h3 className='client__name'>{name}</h3>
           <small className='client__review'>{review}</small>
-        </article>
+          </article>
+        </SwiperSlide>
             )
           })
         }
-      </div>
-
+      </Swiper>
+      </>
     </section>  )
 }
 

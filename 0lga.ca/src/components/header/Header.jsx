@@ -18,7 +18,7 @@ const Header = () => {
       <div className='me'>
         <img src={ME} alt='Olga Perron' />
       </div>
-      <a href='#contact' className='scroll__down'>Scroll Down</a>
+      <a href='#contact' className='scroll__down'>Scroll Down &nbsp;<BsArrowRightSquareFill className='header__down-arrow'/></a>
       </div>
     </header>
   )
