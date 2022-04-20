@@ -53,7 +53,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience__backend">
+        <div className="experience__frontend">
           <h3>Backend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
@@ -95,7 +95,7 @@ const Experience = () => {
 
         </div>
 
-        <div className="experience__backend">
+        <div className="experience__frontend">
           <h3>Soft Skills</h3>
           <div className="experience__content">
             <article className='experience__details'>
@@ -135,7 +135,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience__backend">
+        <div className="experience__frontend">
           <h3>Art & Asset Creation</h3>
           <div className="experience__content">
             <article className='experience__details'>
