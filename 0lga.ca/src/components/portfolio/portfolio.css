@@ -28,6 +28,11 @@
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
+  transition: all .4s ease-in-out;
+}
+
+.portfolio__item-image:hover {
+  transform: scale(1.5);
 }
 
 .portfolio__item-icon {
@@ -50,6 +55,9 @@
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
+  .portfolio__item-image:hover {
+    transform: scale(1.3);
+  }
 }
 
 /* ---------------- Media Queries (Small Devices) ---------------- */
@@ -58,4 +66,8 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  .portfolio__item-image:hover {
+    transform: scale(1.5);
+  }
+
 }

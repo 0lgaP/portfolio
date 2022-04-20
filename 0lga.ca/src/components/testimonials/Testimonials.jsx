@@ -4,6 +4,8 @@ import Avatar from '../../assets/blue.png'
 import Rose from '../../assets/Rosemarry.jpeg'
 import Adam from '../../assets/Adam.jpeg'
 import Jae from '../../assets/Jaeyoung.jpeg'
+import Donna from '../../assets/donna.jpeg'
+import Shan from '../../assets/Shannon.jpeg'
 import {BsFillArrowRightSquareFill, BsFillArrowLeftSquareFill} from 'react-icons/bs'
 
 import { Navigation, Pagination} from 'swiper';
@@ -25,7 +27,7 @@ const data = [
   {
     id: 2,
     name: 'Donna Wawzonek',
-    img: Avatar,
+    img: Donna,
     review: `Olga and I were colleagues for close to three years at Design Exchange and I would welcome an opportunity to work with her again. As the Education and Competitions Coordinator, Olga brought a number of invaluable skills to ensure the success and growth of her programs. Olga is a self-starter that is both highly organized and responds quickly and effectively to unexpected challenges. Olga is a natural connector and created an enviable community of schools, instructors, and participants for her programs. She prioritizes the experiences of people participating in her programs and works tirelessly to ensure the highest quality of public programs. Olga is a resourceful problem-solver that eagerly tests new strategies, tools, and ways of learning to keep her education programs fun and engaging. Olga is an asset to any team seeking a creative and professional individual that takes ownership and pride in everything she does.`
   },
   {
@@ -43,7 +45,7 @@ const data = [
   {
     id: 5,
     name: 'Shannon Piccinin',
-    img: Avatar,
+    img: Shan,
     review: `Olga was a delight to work with during our pair programming sessions together in Lighthouse Labs' Web Development Program. I was always impressed at her ability to think creatively when solving a problem and to articulate ideas as we tackled coding challenges together. I have no doubt that Olga will go on to do amazing things, as she is both an exemplary developer and collaborator.`
   },
   {
