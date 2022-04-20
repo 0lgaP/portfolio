@@ -68,9 +68,15 @@
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+  background-color: var(--color-bg-variant, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
-
+.about__cta-button {
+  display: flex;
+  justify-content: center;
+}
 /* ---------------- Media Queries (Med Devices) ---------------- */
 @media screen and (max-width: 1024px) {
   .about__container {

@@ -110,7 +110,7 @@ const Experience = () => {
 
             <article className='experience__details'>
               <FiMic className='experience__details-icon' />
-              <h4>Project Management</h4>
+              <h4>Teaching</h4>
             </article>
 
             <article className='experience__details'>
@@ -125,7 +125,12 @@ const Experience = () => {
 
             <article className='experience__details'>
               <FiMic className='experience__details-icon' />
-              <h4>Teaching</h4>
+              <h4>Team Lead</h4>
+            </article>
+
+            <article className='experience__details'>
+              <FiMic className='experience__details-icon' />
+              <h4>Project Management</h4>
             </article>
 
             <article className='experience__details'>

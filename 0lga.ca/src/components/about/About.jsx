@@ -25,13 +25,13 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Education</h5>
-              <small>Lighthouse Labs Fullstack Web Development</small>
+              <small>Lighthouse Labs</small>
             </article>
 
             <article className='about__card'>
               <RiTeamFill className='about__icon'/>
               <h5>Experiance</h5>
-              <small>1 year in Development and 10+ years in the Cultural Sector</small>
+              <small>1 year </small>
             </article>
 
             <article className='about__card'>
@@ -48,8 +48,9 @@ const About = () => {
           principles are at the forefront of the components I develop. I utilise my practical problem solving experience to implement fail-safe features thorough documentation and a high level of communication. I am looking to find meaningful employment as a web developer which will leverage my passion for communication and technology.
           </p>
 
+          <div className='about__cta-button'>
           <a href='#contact' className='btn btn-primary'>Let's Chat</a>
-
+          </div>
         </div>
       </div>
     </section>
