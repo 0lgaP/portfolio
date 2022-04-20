@@ -5,7 +5,7 @@ import {BiCheck} from 'react-icons/bi'
 
 const Services = () => {
   return (
-    <section id='experience'>
+    <section id='services'>
       <h5>What I Offer</h5>
       <h2>Work Experience</h2>
 
@@ -18,27 +18,39 @@ const Services = () => {
 
           <ul className='service__list'>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Lead Tech-Talk preparation guiding students in best practices for stand-up presentation</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Detail oriented data entry: transcript, grades, expense reports</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Manage and set up Slack channels and Github invitations</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Salesforce initiation of program folders and population of tracked content including formula for expected/current sales</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+            <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Develop master docs for student tracking, course work, and grade tracking and link to master tracking using google sheets</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+            <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Create full course packages including InDesign schedule, and digital distribution</p>
             </li>
           </ul>
@@ -52,31 +64,45 @@ const Services = () => {
 
           <ul className='service__list'>
             <li>
-              <BiCheck className='service__list-icon' />
+            <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Speaker and educator for sustainable and accessible design principles</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Public speaking commitments and award presentation for the Government of Ontario's Accessible Design Competition </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Key note speaker and promoter on behalf of the Design Exchange programming team</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Program Developer for camps and in-house design workshops</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Delivered an increase in attendance through activity development and project management in the Home School Program</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Website maintenance for the Expo Design Innovation and Technology (EDIT 2017)</p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
+              <div className="service__list-icon">
+              <BiCheck/>
+              </div>
               <p>Content creation for tours, workshops and public programs</p>
             </li>
           </ul>

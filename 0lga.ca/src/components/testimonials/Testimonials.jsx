@@ -82,14 +82,13 @@ const Testimonials = () => {
       slidesPerView={1}
       loop={true}
       pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       >
 
         {
           data.map(({id, name, img, review}) => {
             return (
-              <SwiperSlide key={id} class="swiper-slide">
+              <SwiperSlide key={id} className="swiper-slide">
           <article className='testimonial'>
 
           <h3 className='testemonials__directions'><BsFillArrowLeftSquareFill className='testemonials__arrow'/> &nbsp;Swipe to view more &nbsp;<BsFillArrowRightSquareFill className='testemonials__arrow'/></h3>

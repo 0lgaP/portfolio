@@ -6,7 +6,7 @@ import {GiHeartBottle} from 'react-icons/gi'
 
 const Experience = () => {
   return (
-    <section id='skills'>
+    <section id='experience'>
       <h5>What I do</h5>
       <h2>My Skills</h2>
 

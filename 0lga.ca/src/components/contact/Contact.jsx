@@ -1,16 +1,33 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './contact.css';
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
 import {FaRegCalendarCheck} from 'react-icons/fa'
 import emailjs from 'emailjs-com'
+import axios from 'axios';
+
 
 const Contact = () => {
+  const [vars, setVars] = useState(null)
+  useEffect(() => {
+    const options = {
+      method: 'GET',
+      url: 'http://localhost:8000/contact'
+    }
+    axios.request(options)
+    .then((response) => {
+      setVars(response.data)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  }, [])
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_mq8amhx', 'template_irr1qwe', form.current, 'Iue0eathd2jje57o7')
+    emailjs.sendForm(vars.id, vars.template, form.current, vars.u_id)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
