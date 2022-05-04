@@ -28,11 +28,12 @@
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
-  transition: all .4s ease-in-out;
+  transition: var(--transition);
 }
 
 .portfolio__item-image:hover {
   transform: scale(1.5);
+  
 }
 
 .portfolio__item-icon {
@@ -67,7 +68,10 @@
     gap: 1rem;
   }
   .portfolio__item-image:hover {
-    transform: scale(1.5);
+    width:80vh;
+    transform: rotate(-90deg);
+    position: absolute;
+    z-index: 1;
   }
 
 }
