@@ -31,7 +31,7 @@
   transition: var(--transition);
 }
 
-.portfolio__item-image:hover {
+.clicked {
   transform: scale(1.5);
   
 }
@@ -56,7 +56,7 @@
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
-  .portfolio__item-image:hover {
+  .clicked{
     transform: scale(1.3);
   }
 }
@@ -67,11 +67,12 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .portfolio__item-image:hover {
+  .clicked {
     width:80vh;
     transform: rotate(-90deg);
     position: absolute;
     z-index: 1;
+    margin-left: -87%;
   }
 
 }

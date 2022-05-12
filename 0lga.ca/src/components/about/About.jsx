@@ -40,11 +40,8 @@ const About = () => {
             </article>
           </div>
 
-
           <p>
-          I have worked in culture since 2012, focusing on education, public speaking, accessibility and client experience. Through the development and deployment of private and public
-          community programs I helped to empower my community and developed a deep understanding of engaging content. I am passionate about risk mitigation and intuitive design, these
-          principles are at the forefront of the components I develop. I utilise my practical problem solving experience to implement fail-safe features thorough documentation and a high level of communication. I am looking to find meaningful employment as a web developer which will leverage my passion for communication and technology.
+          I have worked in culture since 2012, focusing on education, public speaking, accessibility and client experience. Through the development and deployment of private and public community programs I helped to empower my community and developed a deep understanding of engaging content. I am passionate about risk mitigation and intuitive design, these principles are at the forefront of the components I develop. I utilise my practical problem solving experience to implement fail-safe features thorough documentation and a high level of communication. I am looking to find meaningful employment as a web developer which will leverage my passion for communication and technology.
           </p>
 
           <div className='about__cta-button'>
