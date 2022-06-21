@@ -63,7 +63,6 @@ const Portfolio = () => {
             return (
               <article key={id} className='portfolio__item'>
                 <div >
-                  {/* <img src={image} alt={title} /> */}
                   <PortfolioImg img={img} gif={gif} alt={title} className={"portfolio__item-image"}/>
                 </div>
                 <h3>{title}</h3>
