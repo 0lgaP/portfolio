@@ -3,6 +3,7 @@ import './header.css';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
 import {BsArrowRightSquareFill} from 'react-icons/bs'
+import olga from "../../assets/bluehair.png"
 
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
       <CTA />
       <HeaderSocials />
       <div className='me'>
-        <img src="https://i.imgur.com/BhR3kzS.png" alt='Olga Perron' />
+        <img src={olga} alt='Olga Perron' />
       </div>
       <a href='#contact' className='scroll__down'>Scroll Down &nbsp;<BsArrowRightSquareFill className='header__down-arrow'/></a>
       </div>
